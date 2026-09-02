@@ -1,0 +1,111 @@
+/* Page Setup */
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Card Container */
+.card {
+    background-color: #2b2b3b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    width: 400px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #89b4fa;
+}
+
+/* Input Form Layout */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #45475a;
+    background-color: #181825;
+    color: #cdd6f4;
+    font-size: 14px;
+    outline: none;
+}
+
+#task-input:focus {
+    border-color: #89b4fa;
+}
+
+#add-btn {
+    padding: 12px 18px;
+    background-color: #89b4fa;
+    color: #11111b;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#add-btn:hover {
+    background-color: #b4befe;
+}
+
+/* Dynamic Task List Items */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background-color: #181825;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #f9e2af; /* Yellow accent for pending */
+}
+
+/* Completed Task Visual State */
+#task-list li.completed {
+    border-left-color: #a6e3a1; /* Green accent for completed */
+}
+
+#task-list li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Action Buttons Inside Task Cards */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #313244;
+}
